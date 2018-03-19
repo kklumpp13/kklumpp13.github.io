@@ -233,19 +233,23 @@ header a {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  align-items: center;
+  justify-content: center;
 }
 
-#about img {
-  max-width: 100%;
-  height: auto;
+#about > div,
+#about > article {
   -webkit-box-flex: 1;
   -webkit-flex: 1 0 50%;
       -ms-flex: 1 0 50%;
           flex: 1 0 50%;
+  padding: 2.5rem;
 }
 
-#about article {
-  padding: 5rem;
+#about img {
+  height: auto;
+  max-width: 100%;
+
 }
 
 @media screen and (max-width: 1201px) {
