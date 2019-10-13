@@ -1,1 +1,6 @@
-[]
+[
+    {
+        "path": "/slides/accessible-forms",
+        "matchPath": "/slides/accessible-forms/*"
+    }
+]

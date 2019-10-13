@@ -1,4 +1,19 @@
-var plugins = []
+var plugins = [{
+      plugin: require('/mnt/c/Users/kklum/Documents/programming/portfolio/kklumpp13.github.io/node_modules/gatsby-plugin-styled-components/gatsby-ssr'),
+      options: {"plugins":[]},
+    },{
+      plugin: require('/mnt/c/Users/kklum/Documents/programming/portfolio/kklumpp13.github.io/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
+      options: {"plugins":[]},
+    },{
+      plugin: require('/mnt/c/Users/kklum/Documents/programming/portfolio/kklumpp13.github.io/node_modules/gatsby-plugin-theme-ui/gatsby-ssr'),
+      options: {"plugins":[]},
+    },{
+      plugin: require('/mnt/c/Users/kklum/Documents/programming/portfolio/kklumpp13.github.io/node_modules/gatsby-theme-mdx-deck/gatsby-ssr'),
+      options: {"plugins":[],"mdx":false,"contentPath":"src/slides","basePath":"/slides/accessible-forms"},
+    },{
+      plugin: require('/mnt/c/Users/kklum/Documents/programming/portfolio/kklumpp13.github.io/node_modules/gatsby-plugin-mdx/gatsby-ssr'),
+      options: {"plugins":[],"defaultLayouts":{"default":"/mnt/c/Users/kklum/Documents/programming/portfolio/kklumpp13.github.io/src/layout/layout.js"}},
+    }]
 // During bootstrap, we write requires at top of this file which looks like:
 // var plugins = [
 //   {
