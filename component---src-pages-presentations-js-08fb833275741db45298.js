@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[5],{671:function(e,c,n){"use strict";n.r(c);var s=n(1),t=(n(0),n(68)),i=n(669);c.default=function(){return Object(s.c)(i.a,null,Object(s.c)("h1",null,"Presentations"),Object(s.c)("h2",null,"Slides"),Object(s.c)(t.Link,{to:"/slides/accessible-forms"},"Developing accessible forms"))}}}]);
+//# sourceMappingURL=component---src-pages-presentations-js-08fb833275741db45298.js.map
