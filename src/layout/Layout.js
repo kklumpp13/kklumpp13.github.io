@@ -5,8 +5,17 @@ import Helmet from 'react-helmet';
 import Header from './header';
 import Footer from './footer';
 import useSiteMetadata from '../hooks/use-sitemetadata';
+import favicon from '../../static/favicon.png';
+
+const ContentWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin-top: 0;
+`;
 
 const Main = styled.main`
+  flex: 1 0 auto;
   margin: 0 auto;
 
   // Max-width: 14400px
@@ -25,12 +34,15 @@ const Layout = ({ children }) => {
         <title>{title}</title>
         <meta name="description" content={description} />
         <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500,700|Roboto:400,500,700&display=swap" rel="stylesheet" />
+        <link rel="icon" href={favicon} />
       </Helmet>
       <Header />
-      <Main>
-        {children}
-      </Main>
-      <Footer />
+      <ContentWrapper>
+        <Main>
+          {children}
+        </Main>
+        <Footer />
+      </ContentWrapper>
     </>
   );
 };

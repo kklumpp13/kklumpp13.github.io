@@ -16,6 +16,7 @@ const GlobalStyle = createGlobalStyle`
     color: ${primaryText};
     font-size: 100%;
     line-height: 1.5;
+    height:100%;
 
     /* Remove margin for main div that Gatsby mounts into */
 
@@ -85,6 +86,11 @@ const GlobalStyle = createGlobalStyle`
     margin: 0px;
     overflow: hidden;
     padding: 0px;
+  }
+
+  #___gatsby, 
+  #___gatsby > div[role="group"][tabindex] {
+    height: 100%;
   }
 `;
 
